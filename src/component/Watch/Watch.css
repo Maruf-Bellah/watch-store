@@ -1,0 +1,19 @@
+.watch{
+     display: grid;
+     grid-template-columns: 5fr 2fr; 
+}
+.watch-info{
+     display: grid;
+     grid-template-columns: repeat(3, 250px);
+     grid-gap: 20px;
+     justify-items: center;
+}
+.watch-card{
+     width: 100%;
+     background-color: aliceblue;
+    
+}
+.card-info{
+     position: fixed;
+     top: 200px;
+}

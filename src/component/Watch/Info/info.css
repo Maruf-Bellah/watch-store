@@ -1,0 +1,7 @@
+.info-card{
+width: 100%;
+display: flex;
+}
+.info img{
+     width: 50px;
+}

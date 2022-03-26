@@ -8,6 +8,7 @@ import './Watch.css';
 const Watch = () => {
      const [watches, setWatches] = useState([]);
      const [cards, setCard] = useState([]);
+     
 
      
 
@@ -29,14 +30,20 @@ const Watch = () => {
           setCard(newCard);
          
      }
+     const choose = (watch) =>{
+      
+          if(cards.length > 1){
+               return cards =' ';
+          }
+          
+     }
      const random = (watch) =>{
      
           const newCard = [cards, watch];
           setCard(newCard);
-      
-   
 
      }
+
          
 
  
@@ -55,9 +62,18 @@ const Watch = () => {
                }
                </div>
                <div className="watch-card">
-                  
-               <Card></Card>
-               
+                    <h2>Select Your Watches</h2>
+                  {
+                    cards.map(card=> <Card 
+                         card ={card}
+                    ></Card>)
+                  }
+                  <button className='btn-me' onClick={choose } >CHOOSE 1 FOR ME</button> <br></br>
+
+                  <button className='btn-again' onClick={()=> random(watches)} >CHOOSE AGINE</button>
+{/* 
+               <Card></Card> */}
+               {/* 
                     <div className='card-info'>{
                          cards.map(card =><Info 
                          key={card.id}
@@ -66,7 +82,7 @@ const Watch = () => {
                          }
 
                                 <button onClick={()=> random(watches)} >click me</button>
-                    </div>
+                    </div> */}
                   
       
                    

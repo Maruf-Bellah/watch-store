@@ -3,6 +3,7 @@
      grid-template-columns: 5fr 2fr; 
 }
 .watch-info{
+     width: 100%;
      display: grid;
      grid-template-columns: repeat(3, 250px);
      grid-gap: 20px;
@@ -10,34 +11,103 @@
 }
 .watch-card{
      width: 100%;
-     background-color: aliceblue;
+     background-color: rgb(224, 224, 224);
+     box-shadow: 3px 3px 35px rgb(238, 234, 234);
+     position: sticky;
+     top: 20px;
+     padding: 20px;
     
 }
 .card-info{
      position: fixed;
      top: 200px;
 }
+.btn-me{
+     padding: 8px;
+     margin-bottom: 10px;
+     color: green;
+     font-weight: 600;
+}
+.btn-again{
+     padding: 8px;
+     margin-bottom: 10px;
+     color: green;
+     font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 600px) {
      .watch{
           display: block;
+          overflow-x: hidden;
+
      }
      .watch-card{
           display: block;
+     
+    
         
      }
      
      .watch-info {
           display: inline-block;
+          overflow: hidden;
+       
        /* background-color: lightblue; */
      }
      .card-info{
           position: relative;
+        
+
+     }
+     .card-inform{
+          width: 100%;
+          
      }
      .info-card{
           display: flex;
           top: 0px;
+  
      }
      .watch-card{
+          width: 100%;
           background-color: none;
+        
      }
+     .product{
+          width: 100%;
+          height: 500px;
+          border: none;
+          background-color: white;
+          overflow-x: hidden;
+          position: relative;
+      
+     }
+     .product-info{
+          padding-left: 20px;
+          overflow-x: hidden;
+          line-height: 10px;
+     }
+     .btn {
+          position: absolute;
+          bottom: 0;
+          left: 20px;
+          font-size: 20px;
+          
+     }
+    
    }

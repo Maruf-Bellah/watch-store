@@ -1,6 +1,22 @@
 .card{
      width: 100%;
-     background-color: aliceblue;
-     position: sticky;
-     top: 21px;
+    
+ 
+   
 }
+.card-inform{
+     width: 100%;
+     background-color: black;
+}
+
+.info-card img{
+     width: 50px;
+     padding-right: 20px;
+
+}
+.info-card{
+     display: flex;
+     font-weight: 500;
+  
+}
+    

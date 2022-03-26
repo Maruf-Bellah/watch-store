@@ -1,15 +1,24 @@
 import React from 'react';
 import'./Card.css';
 
-const Card = () => {
-     // const {card} = card;
+const Card = ({card}) => {
+     const {name, picture} = card;
 
-//     console.log(card);
 
      return (
           <div className='card'>
-               <h1>this is a card</h1>
             
+               <div className="info-card">
+                    <div>
+                         <img src={picture} alt="" />
+                    </div>
+                    <div>
+                         <p>{name}</p>  
+                    </div>
+               </div>
+
+           
+    
           </div>
      );
 };

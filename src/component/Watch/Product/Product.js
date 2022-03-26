@@ -14,7 +14,7 @@ const Product = ({watch, addToCard}) => {
              </div>
                <div className="btn">
                <a href='#/'  onClick={() => addToCard(watch)}>
-               <p>click me</p>
+               <p>Add To Card</p>
              </a>
                </div>
            

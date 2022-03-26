@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Watch from './component/Watch/Watch';
+import How from './component/Watch/How/How';
 
 function App() {
    
@@ -8,6 +9,7 @@ function App() {
     <div >
       
       <Watch></Watch>
+      <How></How>
     </div>
   );
 }

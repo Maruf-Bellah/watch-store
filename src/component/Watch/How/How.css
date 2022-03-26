@@ -1,0 +1,19 @@
+.how{
+     width: 100%;
+     display: block;
+     text-align: justify;
+     padding: 20px 0px;
+}
+
+.one{
+     border: 1px solid blue;
+     width: 100%;
+     padding: 20px;
+     margin: 15xp 0px;
+}
+.two{
+     border: 1px solid black;
+     width: 100%;
+     padding: 20px;
+     margin: 15px 0px;
+}

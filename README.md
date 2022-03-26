@@ -1,4 +1,5 @@
 # My Projec name Wellcome To my Strore
+#my live site link (https://earnest-gaufre-12efee.netlify.app/#/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

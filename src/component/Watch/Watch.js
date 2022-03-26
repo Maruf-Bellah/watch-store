@@ -50,7 +50,7 @@ const Watch = () => {
   
      return (
           <div className="watch">   
-              
+
                <div className="watch-info">
            
                {
@@ -70,21 +70,9 @@ const Watch = () => {
                   }
                   <button className='btn-me' onClick={choose } >CHOOSE 1 FOR ME</button> <br></br>
 
-                  <button className='btn-again' onClick={()=> random(watches)} >CHOOSE AGINE</button>
-{/* 
-               <Card></Card> */}
-               {/* 
-                    <div className='card-info'>{
-                         cards.map(card =><Info 
-                         key={card.id}
-                          card={card}></Info>)
-                          
-                         }
+                  <button className='btn-again' onClick={()=> random(watches)} >CHOOSE AGAIN</button>
 
-                                <button onClick={()=> random(watches)} >click me</button>
-                    </div> */}
-                  
-      
+          
                    
                </div>
         

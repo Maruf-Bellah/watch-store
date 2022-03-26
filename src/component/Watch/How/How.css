@@ -6,14 +6,22 @@
 }
 
 .one{
-     border: 1px solid blue;
+     border: 2px solid gray;
      width: 100%;
      padding: 20px;
      margin: 15xp 0px;
+     border-radius: 8px;
+}
+.one h1{
+     text-align: center;
 }
 .two{
-     border: 1px solid black;
+     border: 2px solid gray;
      width: 100%;
      padding: 20px;
      margin: 15px 0px;
+     border-radius: 8px;
+}
+.two{
+     text-align: center;
 }

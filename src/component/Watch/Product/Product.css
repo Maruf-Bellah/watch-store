@@ -10,6 +10,7 @@
      box-shadow: 3px 3px 35px gray;
      border-radius: 7px;
      position: relative;
+     color: rgb(63, 63, 63);
 }
 .product-info{
      padding-left: 20px;
@@ -25,4 +26,5 @@
 }
 .btn, a{
      text-decoration: none;
+     color: rgb(19, 134, 228);
 }

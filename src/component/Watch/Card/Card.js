@@ -10,7 +10,7 @@ const Card = ({card}) => {
             
                <div className="info-card">
                     <div>
-                         <img src={picture} alt="" />
+                         <img className='pic' src={picture} alt="" />
                     </div>
                     <div>
                          <p>{name}</p>  

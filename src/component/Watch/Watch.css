@@ -1,6 +1,7 @@
 .watch{
      display: grid;
      grid-template-columns: 5fr 2fr; 
+     margin-top: 40px;
 }
 .watch-info{
      width: 100%;
@@ -13,9 +14,11 @@
      width: 100%;
      background-color: rgb(224, 224, 224);
      box-shadow: 3px 3px 35px rgb(238, 234, 234);
+     border-radius: 10px;
      position: sticky;
      top: 20px;
-     padding: 20px;
+     padding-left: 40px;
+    
     
 }
 .card-info{
@@ -31,7 +34,7 @@
 .btn-again{
      padding: 8px;
      margin-bottom: 10px;
-     color: green;
+     color: rgb(131, 21, 131);
      font-weight: 600;
 }
 
@@ -109,9 +112,8 @@
           
      }
      .how{
+          display: none;
           width: 100%;
-      
-          overflow-x: hidden;
      }
      
    

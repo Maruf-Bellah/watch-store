@@ -21,14 +21,14 @@ const Watch = () => {
 
      
      const addToCard = (watch) =>{
-        /*   if(cards.length > 5){
-               alert('hey What are your doing')
+        if(cards.length === 4){
+               alert('ভাই ৪ টার মধ্য থেকে আগে একটা কিনেন')
           }else{
                const newCard = [...cards, watch];
                setCard(newCard);
-          }  */
-          const newCard = [...cards, watch];
-          setCard(newCard);
+          } 
+      /*     const newCard = [...cards, watch];
+          setCard(newCard); */
          
      }
      const choose = (cards) =>{

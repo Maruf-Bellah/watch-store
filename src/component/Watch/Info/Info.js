@@ -5,10 +5,7 @@ import './info.css';
 const Info = ({card}) => {
 
      const {name, picture} = card;
-     const {newButton} = card;
-     console.log(newButton);
-/*      const random = [card];
-     console.log(random); */
+
 
     
      return (

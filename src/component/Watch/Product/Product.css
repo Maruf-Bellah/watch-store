@@ -7,4 +7,20 @@
      border: none;
      box-shadow: 3px 3px 35px gray;
      border-radius: 7px;
+     position: relative;
+}
+.product-info{
+     padding-left: 20px;
+     margin-bottom: 60px;
+     line-height: 10px;
+}
+.btn {
+     position: absolute;
+     bottom: 0;
+     left: 20px;
+     font-size: 20px;
+     
+}
+.btn, a{
+     text-decoration: none;
 }

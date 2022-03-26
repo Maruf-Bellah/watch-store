@@ -8,11 +8,16 @@ const Product = ({watch, addToCard}) => {
       return (
         <div className="product">
              <img src={picture} alt="" />
-             <h3>{name}</h3>
-             <h4>Price {price}</h4>
-             <button onClick={() => addToCard(watch)}>
-                  <p>click me</p>
-             </button>
+             <div className="product-info">
+             <h2>{name}</h2>
+             <h3>Price : $ {price}</h3>
+             </div>
+               <div className="btn">
+               <a href='#/'  onClick={() => addToCard(watch)}>
+               <p>click me</p>
+             </a>
+               </div>
+           
         </div>
           
      );

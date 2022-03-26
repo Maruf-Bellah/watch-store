@@ -17,3 +17,27 @@
      position: fixed;
      top: 200px;
 }
+@media only screen and (max-width: 600px) {
+     .watch{
+          display: block;
+     }
+     .watch-card{
+          display: block;
+        
+     }
+     
+     .watch-info {
+          display: inline-block;
+       /* background-color: lightblue; */
+     }
+     .card-info{
+          position: relative;
+     }
+     .info-card{
+          display: flex;
+          top: 0px;
+     }
+     .watch-card{
+          background-color: none;
+     }
+   }

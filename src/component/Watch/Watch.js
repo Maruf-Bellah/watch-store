@@ -19,14 +19,14 @@ const Watch = () => {
 
      
      const addToCard = (watch) =>{
-          if(cards.length > 5){
+        /*   if(cards.length > 5){
                alert('hey What are your doing')
           }else{
                const newCard = [...cards, watch];
                setCard(newCard);
-          } 
-         /*  const newCard = [...cards, watch];
-          setCard(newCard); */
+          }  */
+          const newCard = [...cards, watch];
+          setCard(newCard);
          
      }
      const random = (watch) =>{
@@ -65,7 +65,7 @@ const Watch = () => {
                           
                          }
 
-                                <button onClick={()=> random(cards)} >click me</button>
+                                <button onClick={()=> random(watches)} >click me</button>
                     </div>
                   
       

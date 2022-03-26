@@ -5,13 +5,12 @@ import './info.css';
 const Info = ({card}) => {
 
      const {name, picture} = card;
+     const {newButton} = card;
+     console.log(newButton);
 /*      const random = [card];
      console.log(random); */
 
-     const random = () =>{
-          console.log('click me');
-     }
-
+    
      return (
           <div className='info'>
                <div className="info-card">
@@ -22,7 +21,7 @@ const Info = ({card}) => {
                          <p>{name}</p>  
                     </div>
                </div>
-        
+            
           </div>
 
      );

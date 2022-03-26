@@ -1,11 +1,12 @@
 import React from 'react';
 
-const Random = (props) => {
+const Random = ({random}) => {
+     console.log(random);
 
      return (
           <div>
                <h4>this is random</h4>
-               <button onClick={props.random}>Random Shonkha</button>
+               <button onClick={random}>Random Shonkha</button>
           </div>
      );
 };

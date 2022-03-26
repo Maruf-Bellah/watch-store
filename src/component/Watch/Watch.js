@@ -8,8 +8,8 @@ import './Watch.css';
 const Watch = () => {
      const [watches, setWatches] = useState([]);
      const [cards, setCard] = useState([]);
-     const [randoms, setRandoms] = useState([]);
-     // console.log(card);
+
+     
 
      useEffect(()=>{
           fetch('watches.json')
@@ -19,19 +19,27 @@ const Watch = () => {
 
      
      const addToCard = (watch) =>{
-          if(cards.length > 3){
+          if(cards.length > 5){
                alert('hey What are your doing')
           }else{
                const newCard = [...cards, watch];
                setCard(newCard);
           } 
+         /*  const newCard = [...cards, watch];
+          setCard(newCard); */
+         
      }
-
      const random = (watch) =>{
-          const newCard = [...randoms, watch];
-          setRandoms(newCard);
-          console.log(watch);
+     
+          const newCard = [cards, watch];
+          setCard(newCard);
+      
+   
+
      }
+         
+
+ 
   
      return (
           <div className="watch">   
@@ -51,22 +59,19 @@ const Watch = () => {
                <Card></Card>
                
                     <div className='card-info'>{
-                         cards.map(card => <Info 
+                         cards.map(card =><Info 
                          key={card.id}
                           card={card}></Info>)
-                         
+                          
                          }
+
+                                <button onClick={()=> random(cards)} >click me</button>
                     </div>
-                    <dir>
-                         {
-                         randoms.map(random => console.log(random))
-                         }
-                    </dir>
-                    <Random key={random.id} 
-                     random ={random}
-                    ></Random>
+                  
+      
                    
                </div>
+        
           </div>
      );
 };

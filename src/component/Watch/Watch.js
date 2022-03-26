@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react';
+
 import Card from './Card/Card';
-import Info from './Info/Info';
-import Random from './Info/Random/Random';
+
 import Product from './Product/Product';
 import './Watch.css';
 
 const Watch = () => {
      const [watches, setWatches] = useState([]);
      const [cards, setCard] = useState([]);
+
      
 
      
@@ -30,13 +31,13 @@ const Watch = () => {
           setCard(newCard);
          
      }
-     const choose = (watch) =>{
-      
-          if(cards.length > 1){
-               return cards =' ';
-          }
-          
+     const choose = (cards) =>{
+          const newCard = [...cards,cards];
+         
+          setCard(newCard);
      }
+
+
      const random = (watch) =>{
      
           const newCard = [cards, watch];
@@ -66,9 +67,19 @@ const Watch = () => {
                   {
                     cards.map(card=> <Card 
                          card ={card}
+                         choose ={choose}
+                        
                     ></Card>)
                   }
-                  <button className='btn-me' onClick={choose } >CHOOSE 1 FOR ME</button> <br></br>
+               {/*    <div>
+                  {
+                    btns.map(btn => console.log(btn))
+                    }
+                  </div> */}
+                    
+
+                 
+                  <button className='btn-me' onClick={() => choose(cards)} >CHOOSE 1 FOR ME</button> <br></br>
 
                   <button className='btn-again' onClick={()=> random(watches)} >CHOOSE AGAIN</button>
 

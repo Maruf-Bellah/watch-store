@@ -1,9 +1,10 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import { faLongArrowRight, faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import React from 'react';
 import'./Product.css';
 
-const Product = ({watch, addToCard}) => {
+const Product = ({watch, addToCard }) => {
+     
      // console.log(props.watch);
      const {name, picture, price } = watch;
 
